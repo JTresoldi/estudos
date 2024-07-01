@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+    Desafio para fazer um site com o fundo redimensionado, ocupando o espaço completo do navegador. Caso o visitante mude o tamanho da janela, o Astronauta vai se mover para ficar sempre alinhado ao centro.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Redimensionado</title>
+    <style>
+
+        body, html {
+            overflow: hidden;
+        }
+
+        body {
+            height: 100vh;
+            background-image: url('img/espaco.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img.atro {
+            width: 10vh;
+            max-width: 200px;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="img/astronauta.png" alt="Astronauta" class="astro">
+</body>
+</html>
