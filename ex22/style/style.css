@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+body {
+    height: 98vh;
+    background-image: url(../imagens/wallpaper005.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+div.quadrado {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 300px;
+    height: 300px;
+}
+
+div#q1 {
+    background-color: aquamarine;
+}
+
+div#q2 {
+    background-image: linear-gradient(to bottom, yellow, orange);
+}
+
+div#q3 {
+    background-image: url(../imagens/pattern001.png);
+}
+
+div.bloco {
+    background-image: url('../imagens/wallpaper002.jpg');
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+div#c1 {
+    background-position: left top;
+}
+
+div#c2 {
+    background-position: left center;
+}
+
+div#c3 {
+    background-position: right bottom;
+}
+
+div#c4 {
+    background-position: center center;
+}
