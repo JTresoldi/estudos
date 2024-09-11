@@ -148,7 +148,7 @@ main {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: auto;
+  width: 30%;
   height: 80vh;
   border-radius: 0;/*Torna a imagem circular */
   margin-right: 20px;/* Espaçamento entre foto e texto */
@@ -174,6 +174,16 @@ main {
 .profile-info p {
   margin: 15px 0;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;/*alinha o conteudo em coluna*/
+  }
+
+  .profile {
+    padding: 30px;
+  }
 }
 
 .social-buttons {
