@@ -1,0 +1,208 @@
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* esconde a barra de rolagem */
+}
+
+/* Menu */
+nav {
+  background-color: #41AEF2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav a {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .nome {
+  margin-right: auto;
+}
+
+.menu .nome a {
+  background: none;
+  padding: 15px;
+  color: #FFF;
+  font-weight: bold;
+  transition: transform 0.3s, text-decoration 0.3s;
+}
+
+.menu .nome a:hover {
+  background: none;
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.menu li {
+  margin-right: 0;
+}
+
+.menu .right {
+  margin-left: 4px;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.3s, text-decoration 0.3s, background-color 0.3s;
+}
+
+.menu li a:hover {
+  background: none;
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+/* Fim do Menu */
+main {
+  margin: 0;
+  padding: 0;
+}
+
+/* Profile - estilo para apresentação */
+.full-screen {
+  height: 100vh; /* Ocupa 100% da altura da tela */
+  display: flex; /* Usa Flexbox para centralizar o conteúdo */
+  flex-direction: column; /* Alinha conteúdo em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
+  position: relative; /* Permite posicionamento absoluto da seta */
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.scroll-down {
+  position: absolute; /* Posiciona a seta de forma absoluta */
+  bottom: 20px; /* Coloca a seta a 20px do fundo da seção */
+  font-size: 24px; /* Tamanho da seta */
+  color: #666; /* Cor da seta */
+  text-decoration: none; /* Remove sublinhado */
+  transition: transform 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.scroll-down:hover {
+  transform: scale(1.1);
+}
+
+.scroll-down i {
+  animation: bounce 2s infinite; /* Animação de pular */;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+#about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  background-color: #41AEF2; /*Fundo do about*/
+}
+
+.profile {
+  display: flex;
+  align-items: right;
+  text-align: justify;
+  max-width: 900px; /*limita a largura maxima do conteudo*/
+  margin-left: 30vw; /*centraliza o conteudo*/;
+  padding: 20px;/* Adiciona um pouco de padding para dar mais respiro ao conteúdo */
+}
+
+.profile-photo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: 80vh;
+  border-radius: 0;/*Torna a imagem circular */
+  margin-right: 20px;/* Espaçamento entre foto e texto */
+  object-fit: cover;/* Mantém a proporção da imagem */
+}
+
+.profile-info {
+  max-width: 650px;/* limita a largura do texto */
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 2.2em;
+  color: #76EEF5;
+}
+
+.profile-info h3 {
+  margin: 10px 0;
+  font-size: 1.6em;
+  color: #76EEF5;
+}
+
+.profile-info p {
+  margin: 15px 0;
+  color: #ffffff;
+}
+
+.social-buttons {
+  display: inline-flex;/* Alinha os itens no contêiner em uma linha, criando um layout flexível */
+  gap: 10px;/* Adiciona um espaçamento de 10px entre cada botão social */
+  margin-top: 5px; /* Adiciona um espaçamento de 20px acima do contêiner de botões */
+  align-items: center;
+}
+
+.btn-social {
+  color: #666;
+  font-size: 24px;
+  text-decoration: none; /* Remove qualquer sublinhado dos links */
+  transition: transform 0.3s;/* Aplica uma transição suave ao transformar o ícone, como no hover */
+}
+
+.btn-social:hover {
+  transform: scale(1.1);/* Aumenta ligeiramente o tamanho do ícone quando o mouse passa sobre ele */
+  color: #999;/* Muda a cor do ícone para um cinza mais claro ao passar o mouse */
+}
+/* Fim do Profile */
+
+
+
+/* Footer 
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: auto;
+} */

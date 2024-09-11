@@ -1,0 +1,26 @@
+link de referencia:
+Erik Dempsey - teamplate
+https://sites.google.com/view/imt-dempsey-resume-template/
+
+Curso em video - Efeito cordel
+https://www.cursoemvideo.com/
+
+
+Pallete:
+#A0E7E5 - Celeste (azul claro)
+#B4F8C8 - Celadon (verde claro)
+#FFAEBC - Cherry blosson (rosa claro)
+#EAE6F0 - Magnolis (Cinza claro)
+#7D84B2 - Cool Gray (Roxo/cinza)
+#FBE7C6 - Champagne - (amarelo claro)
+
+#7BDFF2 - Azul
+#B2F7EF - Verde
+#EFF7F6 - Cinza
+#F7D6E0 - Rosa claro
+#F2B5D4 - Rosa forte
+#A594F9 - Roxo
+
+#44A1F2 azul forte
+#41AEF2 azul meia bomba
+#6CD9C5 verdinho
