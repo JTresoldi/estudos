@@ -8,19 +8,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espaço Redimensionado</title>
     <style>
-        body, html {
-            overflow: hidden;
+        * {
+            margin: 0;
+            padding: 0;
         }
 
-        #container {
+        body, html {
             height: 100vh;
-            background-image: url('img/espaco.jpg');
-            background-position: center center;
-            background-repeat: no-repeat;
+            width: 100vw;
+        }
+
+        body {
+            background: url(img/espaco.jpg) no-repeat top center;
             background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background-attachment: fixed;
         }
 
         #conteudo {
@@ -36,7 +37,7 @@
         }
     </style>
 </head>
-<body id="container">
+<body>
     <div id="conteudo"></div>
 </body>
 </html>
